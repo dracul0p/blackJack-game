@@ -1,0 +1,93 @@
+/* General styling for the game */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+  font-weight: bold;
+  background-color: #0a0a0a; /* Dark background for a casino feel */
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("images/table.png");
+  background-size: cover;
+  max-width: 80%;
+  margin: 5% auto; /* Centers the container with margin */
+  padding: 20px; /* Adds padding inside the container */
+  border: 3px solid #222;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Adds a shadow for a 3D effect */
+  backdrop-filter: blur(10px); /* Adds a subtle blur effect */
+}
+
+/* Styling the heading */
+h1 {
+  color: goldenrod;
+  font-family: "Arial Black", "Impact", sans-serif;
+  letter-spacing: 2px; /* Adds spacing between letters */
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Message styling */
+#message-el {
+  font-style: italic;
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+/* Cards and sum text */
+#cards-el,
+#sum-el,
+#player-el {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Button container for better layout */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  color: white;
+  width: 150px;
+  background: goldenrod;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+  background: #f1c40f;
+  transform: translateY(-3px); /* Adds a floating effect on hover */
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(0); /* Brings the button back to normal on click */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  button {
+    width: 120px;
+    font-size: 1em;
+  }
+}
